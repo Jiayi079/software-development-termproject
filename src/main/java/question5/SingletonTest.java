@@ -1,8 +1,13 @@
 package question5;
 
 public class SingletonTest {
-  public static SingletonTest getInstance(){
-    return null;
-  }
 
+    private static SingletonTest instance = null;
+
+    public static SingletonTest getInstance(){
+        if (instance == null) {
+            instance = new SingletonTest();
+        }
+        return instance;
+    }
 }

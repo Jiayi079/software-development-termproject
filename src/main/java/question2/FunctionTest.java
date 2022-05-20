@@ -5,11 +5,11 @@ import java.util.Set;
 
 public class FunctionTest {
 
-  public static StringTester hasDuplicateTester(){
-    return null;
-  }
+    public static StringTester hasDuplicateTester(){
+        return new duplicateTester();
+    }
 
-  public static StringTester hasCapsChecker() {
-    return null;
-  }
+    public static StringTester hasCapsChecker() {
+        return new capsChecker();
+    }
 }

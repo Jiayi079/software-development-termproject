@@ -15,12 +15,13 @@ public class GenericsTest<T> {
 
   // Returns true if there are more items
   public boolean hasNext(){
-    return false;
+    return i < list.size();
   }
 
   // returns the next item in the list
   public T next(){
-    return null;
+      i++;
+      return list.get(i-1);
   }
 
 }
